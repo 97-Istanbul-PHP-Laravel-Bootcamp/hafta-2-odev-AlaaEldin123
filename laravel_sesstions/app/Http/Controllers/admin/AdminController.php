@@ -12,10 +12,32 @@ class AdminController extends Controller
      return view('admin.admin_master');
     }
 
-
+    // return to admin login page
     public function AdminLogin(){
 
     return view('admin.admin_login');
 
     }
+
+    // admins table view page
+
+    public function AdminView(){
+
+        return view('admin.manageadmin.admin_view');
+    }
+
+    // return to add new admin view page
+
+    public function admin_register (){
+
+        return view('admin.manageadmin.admin_register');
+    }
+
+     // return to Edit admin view page
+    public function adminEdit(){
+
+        return view('admin.manageadmin.adminEdit');
+    }
+
+
 }

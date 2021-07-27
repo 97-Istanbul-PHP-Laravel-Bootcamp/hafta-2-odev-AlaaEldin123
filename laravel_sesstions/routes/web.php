@@ -24,6 +24,12 @@ Route::get('/dashboard', [AdminController::class, 'AdminDashboard']);
 
 Route::get('/login', [AdminController::class, 'AdminLogin']);
 
+Route::get('/users/view', [AdminController::class, 'AdminView'])->name('admin.view');
+
+Route::get('/users/store', [AdminController::class, 'admin_register'])->name('admin.register');
+
+Route::get('/users/edit', [AdminController::class, 'adminEdit'])->name('admin.edit');
+
 });
 
 
