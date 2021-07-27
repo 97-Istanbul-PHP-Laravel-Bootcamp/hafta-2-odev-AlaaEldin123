@@ -17,6 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//admin user routes
 
 Route::prefix('admin')->group( function() {
 
@@ -29,6 +30,11 @@ Route::get('/users/view', [AdminController::class, 'AdminView'])->name('admin.vi
 Route::get('/users/store', [AdminController::class, 'admin_register'])->name('admin.register');
 
 Route::get('/users/edit', [AdminController::class, 'adminEdit'])->name('admin.edit');
+
+Route::get('/users/delete', [AdminController::class, 'adminDelete'])->name('admin.delete');
+
+
+
 
 });
 

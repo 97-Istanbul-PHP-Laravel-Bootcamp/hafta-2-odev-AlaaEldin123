@@ -34,10 +34,18 @@ class AdminController extends Controller
     }
 
      // return to Edit admin view page
-    public function adminEdit(){
+    public function adminEdit($id){
 
         return view('admin.manageadmin.adminEdit');
     }
 
+     // Delete admin 
+    public function adminDelete(){
+
+    return "admin user deleted succusfuly";
+    }
+
+ 
+   
 
 }

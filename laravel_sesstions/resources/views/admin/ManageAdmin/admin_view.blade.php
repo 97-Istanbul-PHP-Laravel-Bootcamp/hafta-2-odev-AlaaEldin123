@@ -45,12 +45,10 @@ Admin Users View
                                                         <th>istanbul</th>
                                                         <th>
   <a href="{{ route('admin.edit')}}" class="btn btn-primary" title="Edit Data"><i class="fa fa-pencil"></i> </a>
- <a href="" class="btn btn-danger" title="Delete Data" id="delete">
-    <i class="fa fa-trash"></i></a>
-     <a href="" class="btn btn-warning" title="Change Password" id="change">
-    <i class="fa fa-magic"></i></a>
-     <a href="" class="btn btn-info" title="view data" id="change">
-    <i class="fa fa-eye"></i></a>
+
+ <a href="{{ route('admin.delete')}}" class="btn btn-danger" title="Delete Data" id="delete"><i class="fa fa-trash"></i></a>
+
+  
 
                                                         </th>
                                                     </tr>
@@ -79,27 +77,27 @@ Admin Users View
 
 
     <!-- BEGIN Vendor JS-->
-  <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+  <script src="{{asset('backend/app-assets/vendors/js/vendors.min.js')}}"></script>
     <!-- BEGIN Vendor JS-->
 
     <!-- BEGIN: Page Vendor JS-->
-    <script src="../../../app-assets/vendors/js/extensions/dropzone.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.select.min.js"></script>
-    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/extensions/dropzone.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/datatables.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/datatables.buttons.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/buttons.bootstrap.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/dataTables.select.min.js')}}"></script>
+    <script src="{{asset('backend/app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js')}}"></script>
     <!-- END: Page Vendor JS-->
 
     <!-- BEGIN: Theme JS-->
-    <script src="../../../app-assets/js/core/app-menu.js"></script>
-    <script src="../../../app-assets/js/core/app.js"></script>
-    <script src="../../../app-assets/js/scripts/components.js"></script>
+    <script src="{{asset('backend/app-assets/js/core/app-menu.js')}}"></script>
+    <script src="{{asset('backend/app-assets/js/core/app.js')}}"></script>
+    <script src="{{asset('backend/app-assets/js/scripts/components.js')}}"></script>
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    <script src="../../../app-assets/js/scripts/ui/data-list-view.js"></script>
+    <script src="{{asset('backend/app-assets/js/scripts/ui/data-list-view.js')}}"></script>
 
 
 @endsection

@@ -2,7 +2,7 @@
 @section('admin')
 
 @section('title')
-Add New Admin Users 
+Edit Admin Users 
 @endsection
 
 <div class="col-md-12 col-12">
