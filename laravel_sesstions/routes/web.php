@@ -2,6 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\backend\CategoryController;
+
+
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +44,18 @@ Route::get('/users/delete', [AdminController::class, 'adminDelete'])->name('admi
 });
 
 
+// all category routes
+Route::prefix('category')->group( function() {
+
+Route::get('/view', [CategoryController::class, 'CategoryView'])->name('Category.view');
+
+
+
+Route::get('category/store', [CategoryController::class, 'CategoryStore'])->name('category.store');
+
+Route::get('category/edit', [CategoryController::class, 'CategoryEdit'])->name('category.edit');
+
+Route::get('/category/delete', [CategoryController::class, 'CategoryDelete'])->name('category.delete');
+
+
+});

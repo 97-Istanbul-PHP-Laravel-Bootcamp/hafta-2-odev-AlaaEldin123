@@ -28,7 +28,7 @@
 
                   <li class=" nav-item"><a href="#"><i class="feather icon-grid"></i><span class="menu-title" data-i18n="Ecommerce">Manage Category</span></a>
                     <ul class="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i class="feather icon-grid"></i><span class="menu-item" data-i18n="Shop">View Category</span></a>
+                        <li><a href="{{route('Category.view')}}"><i class="feather icon-grid"></i><span class="menu-item" data-i18n="Shop">View Category</span></a>
                         </li>                    
                      
                     </ul>
