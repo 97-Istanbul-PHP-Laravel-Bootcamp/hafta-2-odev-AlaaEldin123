@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\backend\CategoryController;
 use App\Http\Controllers\backend\ProductController;
+use App\Http\Controllers\backend\SalesController;
 
 
 
@@ -61,7 +62,7 @@ Route::get('/delete', [CategoryController::class, 'CategoryDelete'])->name('cate
 
 
 
-// all category routes
+// all Product routes
 Route::prefix('product')->group( function() {
 
 Route::get('/view', [ProductController::class, 'ProductView'])->name('product.view');
@@ -71,5 +72,19 @@ Route::get('/view', [ProductController::class, 'ProductView'])->name('product.vi
 Route::get('/edit', [ProductController::class, 'ProductEdit'])->name('product.edit');
 
 Route::get('/delete', [ProductController::class, 'ProductDelete'])->name('product.delete');
+
+});
+
+
+// all Sales routes
+Route::prefix('sales')->group( function() {
+
+Route::get('/view', [SalesController::class, 'SalesView'])->name('sales.view');
+
+ Route::get('/store', [SalesController::class, 'SalesStore'])->name('sales.store');
+
+Route::get('/edit', [SalesController::class, 'SalesEdit'])->name('sales.edit');
+
+Route::get('/delete', [SalesController::class, 'SalesDelete'])->name('sales.delete');
 
 });

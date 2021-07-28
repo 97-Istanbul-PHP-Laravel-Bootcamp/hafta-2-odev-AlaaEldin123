@@ -43,9 +43,9 @@
                     </ul>
                 </li>
 
-                <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Manage Selles</span></a>
+                <li class=" nav-item"><a href="#"><i class="feather icon-shopping-cart"></i><span class="menu-title" data-i18n="Ecommerce">Manage Sales</span></a>
                     <ul class="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i class="feather icon-shopping-cart"></i><span class="menu-item" data-i18n="Shop">View Selles</span></a>
+                        <li><a href="{{route('sales.view')}}"><i class="feather icon-shopping-cart"></i><span class="menu-item" data-i18n="Shop">View Selles</span></a>
                         </li>                    
                      
                     </ul>
