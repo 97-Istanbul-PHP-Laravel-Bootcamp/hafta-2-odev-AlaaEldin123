@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\admin\AdminController;
 use App\Http\Controllers\backend\CategoryController;
-
+use App\Http\Controllers\backend\ProductController;
 
 
 
@@ -51,11 +51,25 @@ Route::get('/view', [CategoryController::class, 'CategoryView'])->name('Category
 
 
 
-Route::get('category/store', [CategoryController::class, 'CategoryStore'])->name('category.store');
+Route::get('/store', [CategoryController::class, 'CategoryStore'])->name('category.store');
 
-Route::get('category/edit', [CategoryController::class, 'CategoryEdit'])->name('category.edit');
+Route::get('/edit', [CategoryController::class, 'CategoryEdit'])->name('category.edit');
 
-Route::get('/category/delete', [CategoryController::class, 'CategoryDelete'])->name('category.delete');
+Route::get('/delete', [CategoryController::class, 'CategoryDelete'])->name('category.delete');
 
+});
+
+
+
+// all category routes
+Route::prefix('product')->group( function() {
+
+Route::get('/view', [ProductController::class, 'ProductView'])->name('product.view');
+
+ Route::get('/store', [ProductController::class, 'ProductStore'])->name('product.store');
+
+Route::get('/edit', [ProductController::class, 'ProductEdit'])->name('product.edit');
+
+Route::get('/delete', [ProductController::class, 'ProductDelete'])->name('product.delete');
 
 });

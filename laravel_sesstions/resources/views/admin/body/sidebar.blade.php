@@ -37,7 +37,7 @@
 
                   <li class=" nav-item"><a href="#"><i class="feather icon-package"></i><span class="menu-title" data-i18n="Ecommerce">Manage Product</span></a>
                     <ul class="menu-content">
-                        <li><a href="app-ecommerce-shop.html"><i class="feather icon-package"></i><span class="menu-item" data-i18n="Shop">View Product</span></a>
+                        <li><a href="{{route('product.view')}}"><i class="feather icon-package"></i><span class="menu-item" data-i18n="Shop">View Product</span></a>
                         </li>                    
                      
                     </ul>
